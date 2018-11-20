@@ -16,8 +16,8 @@
                 <% if @data[:current_member] %>
                   <h3><%=@data.fetch(:current_member).fetch(:email)%></h3>
                   <h5>Available Balance</h5>
-                  <h6>0.956545455 BTC</h6>
-                  <p>0.0000000 LTC</p>
+                  <h6 class="bal"><code class="bid"></code> <%= @data.fetch(:current_market).fetch(:bid_unit).upcase %></h6>
+                  <h6 class="bal"><code class="ask"></code> <%= @data.fetch(:current_market).fetch(:ask_unit).upcase %></h6>
                 <%end%>
               </div>
             </div>

@@ -5,6 +5,7 @@
     bidBookSel: 'table.bids'
     seperatorSelector: 'table.seperator'
     fade_toggle_depth: '#fade_toggle_depth'
+    currenctBalance: '.order_book_content h6.bal'
 
   @update = (event, data) ->
     @updateOrders(@select('bidBookSel'), _.first(data.bids, @.attr.bookLimit), 'bid')
@@ -101,6 +102,10 @@
       @trigger target, 'place_order::input::price', data
       @trigger target, 'place_order::input::volume', data
 
+  @updateAvailableBal = (event, data) ->
+    node = @select('currenctBalance')
+    node.find("code.#{data.type}").text(data.balance)
+
   @after 'initialize', ->
     @on document, 'market::order_book::update', @update
 
@@ -116,3 +121,5 @@
       i = $(e.target).closest('tr').data('order')
       @placeOrder $('#ask_entry'), _.extend(@computeDeep(e, gon.bids), type: 'bid')
       @placeOrder $('#bid_entry'), {price: BigNumber(gon.bids[i][0]), volume: BigNumber(gon.bids[i][1])}
+
+    @on 'place_order::balance::change', @updateAvailableBal

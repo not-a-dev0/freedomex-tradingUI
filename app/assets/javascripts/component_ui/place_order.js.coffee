@@ -94,7 +94,7 @@
     @select('currentBalanceSel').data('balance', balance)
     @select('currentBalanceSel').text(formatter.fix(type, balance))
 
-    @trigger 'place_order::balance::change', balance: BigNumber(balance)
+    @trigger 'place_order::balance::change', {balance: BigNumber(balance), type: type}
     @trigger "place_order::max::#{@usedInput}", max: BigNumber(balance)
 
   @updateAvailable = (event, order) ->
@@ -109,6 +109,7 @@
     else
       @select('positionsLabelSel').fadeOut().text('')
     node.text(available)
+    @trigger 'place_order::balance::change', {balance: BigNumber(available), type: type}
 
   @priceAlertHide = (event) ->
     @select('priceAlertSel').fadeOut ->
