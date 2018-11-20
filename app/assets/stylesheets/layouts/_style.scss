@@ -208,9 +208,8 @@ header #languages {
 header span + span {
     margin-left: 10px !important;
     margin-right: 10px;
-    font-size: 16px;
+    font-size: 14px;
     color: #333;
-    text-transform: uppercase;
 }
 .nbs-flexisel-inner {
     border:0;
@@ -248,6 +247,14 @@ header span + span {
 
 .red-clr{
     color: #C90018 !important;
+}
+
+.email-limit {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 96px;
+    display: inline-block;
 }
 
 .currency-name{

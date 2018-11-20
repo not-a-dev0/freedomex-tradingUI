@@ -62,7 +62,7 @@
           <li class="nav-item account-settings text-left active">
             <a class="nav-link " href="#" data-toggle="dropdown">
               <span class="user-icon"><img src="/assets/default-profile.png"></span>
-              <span>Ann Droid</span>
+              <span class="email-limit"><%=@data.fetch(:current_member).fetch(:email)%></span>
             </a>
             <a class="nav-link" href="<%= generate_ui_url('signout') %>"><span class="log-out-btn">Logout</span></a>
           </li>
