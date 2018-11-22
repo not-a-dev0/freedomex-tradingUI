@@ -59,13 +59,16 @@
     <div class="col-md-3">
       <ul class="right-nav nav-menu-right">
         <% if @data[:current_member] %>
-          <li class="nav-item account-settings text-left active">
+          <!-- <li class="nav-item account-settings text-left active">
             <a class="nav-link " href="#" data-toggle="dropdown">
               <span class="user-icon"><img src="/assets/default-profile.png"></span>
-              <span class="email-limit"><%=@data.fetch(:current_member).fetch(:email)%></span>
+              <span class="email-limit"><%#=@data.fetch(:current_member).fetch(:email)%></span>
             </a>
-            <a class="nav-link" href="<%= generate_ui_url('signout') %>"><span class="log-out-btn">Logout</span></a>
-          </li>
+
+            <a class="nav-link" href="<%#= generate_ui_url('signout') %>"><span class="log-out-btn">Logout</span></a>
+          </li> -->
+
+          <%= render partial: 'settings' %>
         <% else %>
           <li class="nav-item account-settings text-left active">
             <%= t('markets.mask.warning').html_safe %>

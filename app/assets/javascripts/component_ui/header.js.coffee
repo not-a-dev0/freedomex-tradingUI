@@ -18,7 +18,7 @@
     @select('change').html("<span class='#{trend}'>#{formatter.price_change(p1, p2)}%</span>")
 
   @after 'initialize', ->
-    @on document, 'market::ticker', @refresh
+    #@on document, 'market::ticker', @refresh
 
     if Cookies.get('sound') == undefined
       Cookies.set('sound', true, 30)

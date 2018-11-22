@@ -14,7 +14,9 @@ p {
   height:20px;
   clear:both;
 }
-
+header #settings .dropdown-menu li {
+    display: block;
+}
 #flexiselDemo1, #flexiselDemo2, #flexiselDemo3 {
   display:none;
 }

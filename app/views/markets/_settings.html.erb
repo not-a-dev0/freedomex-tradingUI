@@ -1,6 +1,6 @@
-<li id="settings" class="dropdown">
+<li id="settings" class="dropdown nav-item account-settings text-left active">
   <a class="dropdown-toggle" href="#" data-toggle="dropdown">
-    <i class="fa fa-user"></i><span><%= @data.fetch(:current_member).fetch(:email) %></span>
+    <span class="user-icon"><img src="/assets/default-profile.png"></span><span class="email-limit"><%= @data.fetch(:current_member).fetch(:email) %></span>
   </a>
   <ul class="dropdown-menu">
     <li>
