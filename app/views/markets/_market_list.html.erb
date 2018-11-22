@@ -16,7 +16,7 @@
                 <%= t('.all_html') %>
               </a>
             </li>
-            <% @data[:market_groups].first(3).each do |name| %>
+            <% @data[:market_groups].first(5).reverse().each do |name| %>
               <li>
                 <a data-name="<%= name %>" href="javascript:;">
                   <%= t('.ccy_html', currency: name.upcase) %>
