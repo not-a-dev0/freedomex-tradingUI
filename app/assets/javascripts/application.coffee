@@ -51,6 +51,7 @@ $ ->
   DepthUI.attachTo('#depths_wrapper')
 
   MyOrdersUI.attachTo('#my_orders')
+  MyOrdersHistoryUI.attachTo('#my_orders_history')
   MarketTickerUI.attachTo('#ticker')
   MarketSwitchUI.attachTo('#market_list_wrapper')
   MarketTradesUI.attachTo('#market_trades_wrapper')

@@ -61,6 +61,7 @@
     @resetForm(event)
     window.sfx_success()
     @enableSubmit()
+    @trigger 'order::wait::populate', orders: data.orders
 
   @handleError = (event, data) ->
     @cleanMsg()

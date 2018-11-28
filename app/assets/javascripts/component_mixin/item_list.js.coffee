@@ -28,6 +28,7 @@
 
   @populate = (event, data) ->
     if not _.isEmpty(data.orders)
+      @select('tbody').empty()
       @addOrUpdateItem item for item in data.orders
 
     @checkEmpty()
