@@ -22,8 +22,18 @@
         method:  'delete'
         success: =>
           location.reload()
+  @handleSuccess = (event, data) ->
+    @select('cancelDropDown').removeClass('open')
+    #alert('Succcess!')
+    location.reload()
+
+  @handleError = (event, data) ->
+    alert data.responseTex
 
   @after 'initialize', ->
     @on document, 'order::wait::populate', @populate
     @on document, 'order::wait order::cancel order::done', @orderHandler
     @on @select('tbody'), 'click', @cancelOrder
+
+    @on @select('cancelButtons'), 'ajax:success', @handleSuccess
+    @on @select('cancelButtons'), 'ajax:error', @handleError

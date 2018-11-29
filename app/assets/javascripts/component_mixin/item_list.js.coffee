@@ -2,6 +2,7 @@
   @attributes
     tbody: 'table > tbody'
     empty: '.empty-row'
+    cancelButtons: '.dropdown-wrapper .cancelButton'
 
   @checkEmpty = (event, data) ->
     if @select('tbody').find('tr.order').length is 0
