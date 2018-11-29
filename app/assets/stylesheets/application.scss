@@ -615,6 +615,12 @@ header {
       background-color: $highlight-color;
     }
 
+    tr:hover, tr:focus, tr:active {
+      td {
+        background-color: rgba(0,0,0,.075) !important;
+      }
+    }
+
     td {
       &.price, &.amount, &.volume, &.change {
         text-align: right;
@@ -682,4 +688,14 @@ table {
 
 .panel-width {
   width: 100%
+}
+.table-hover > tbody > tr:hover > td, .table-hover > tbody > tr:hover > th {
+  background-color: rgba(0,0,0,.075) !important;
+  border: none;
+}
+span.label-cancel {
+  color: #666;
+}
+span.label-done {
+  color: #666;
 }
