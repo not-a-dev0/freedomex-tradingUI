@@ -394,7 +394,7 @@
     border: 3px solid #666;
 
     .panel-body-content {
-      height: $my-orders-height - $gutter-2x;
+      height: 185px;
 
       .time, .price, .volume, .amount {
         & > span { display: block; height: 16px; padding: 2px 0; }
