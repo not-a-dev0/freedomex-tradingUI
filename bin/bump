@@ -3,8 +3,8 @@
 set -e
 
 if [ -n "${V}" ]; then
-cat > lib/peatio_trading_ui/version.rb << EOF
-module PeatioTradingUI
+cat > lib/freedomex_trading_ui/version.rb << EOF
+module FreedomexTradingUI
   VERSION = '${V}'
 end
 EOF

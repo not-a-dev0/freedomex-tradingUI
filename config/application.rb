@@ -10,7 +10,7 @@ require 'sprockets/railtie'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module PeatioTradingUI
+module FreedomexTradingUI
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
@@ -43,13 +43,13 @@ module PeatioTradingUI
     # We disable eager load here since lib contains lot of stuff which is not required for typical app functions.
     config.paths.add 'lib', eager_load: false, autoload: true
 
-    # Automatically load and reload constants from "lib/peatio_trading_ui/*":
-    #   lib/peatio_trading_ui/foo/bar/baz.rb => Bar::Baz
-    # We disable eager load here since lib/peatio_trading_ui contains lot of stuff which is not required for typical app functions.
-    config.paths.add 'lib/peatio_trading_ui', eager_load: false, autoload: true, glob: '*'
+    # Automatically load and reload constants from "lib/freedomex_trading_ui/*":
+    #   lib/freedomex_trading_ui/foo/bar/baz.rb => Bar::Baz
+    # We disable eager load here since lib/freedomex_trading_ui contains lot of stuff which is not required for typical app functions.
+    config.paths.add 'lib/freedomex_trading_ui', eager_load: false, autoload: true, glob: '*'
 
-    # Explicitly require "lib/peatio_trading_ui.rb".
-    # require_dependency 'peatio_trading_ui'
+    # Explicitly require "lib/freedomex_trading_ui.rb".
+    # require_dependency 'freedomex_trading_ui'
     # config.middleware.insert(0, Rack::ReverseProxy) do
     #  reverse_proxy_options preserve_host: true
     #  reverse_proxy '/trading/*', 'http://localhost:5000'

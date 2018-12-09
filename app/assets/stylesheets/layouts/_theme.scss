@@ -1,4 +1,4 @@
-/* WBUK peatio-theme theme. http://www.wbuk.io */
+/* WBUK freedomex-theme theme. http://www.wbuk.io */
 
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
@@ -7679,14 +7679,14 @@ body:not(.ui-radius) .btn {
   border-radius: 0 !important; }
 
 /* ---------------------------------------------- */
-/*          Theme peatio colors
+/*          Theme freedomex colors
 /* ---------------------------------------------- */
 hr {
   border-color: #ededed; }
 
-.theme-peatio-primary {
+.theme-freedomex-primary {
   background: #536578; }
-  .theme-peatio-primary.gradient {
+  .theme-freedomex-primary.gradient {
     background-color: #778ba1;
     /*IE 10*/
     background-image: -webkit-gradient(linear, left top, left bottom, from(#778ba1), to(#536578)) !important;
@@ -7698,9 +7698,9 @@ hr {
     -webkit-box-shadow: 0 1px 1px rgba(194, 203, 213, 0.8) inset;
             box-shadow: 0 1px 1px rgba(194, 203, 213, 0.8) inset; }
 
-.theme-peatio-secondary {
+.theme-freedomex-secondary {
   background: #c1c5c9; }
-  .theme-peatio-secondary.gradient {
+  .theme-freedomex-secondary.gradient {
     background-color: #eaebed;
     /*IE 10*/
     background-image: -webkit-gradient(linear, left top, left bottom, from(#eaebed), to(#c1c5c9)) !important;
@@ -7712,9 +7712,9 @@ hr {
     -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8) inset;
             box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8) inset; }
 
-.theme-peatio-success {
+.theme-freedomex-success {
   background: #4bc927; }
-  .theme-peatio-success.gradient {
+  .theme-freedomex-success.gradient {
     background-color: #7adf5d;
     /*IE 10*/
     background-image: -webkit-gradient(linear, left top, left bottom, from(#7adf5d), to(#4bc927)) !important;
@@ -7726,9 +7726,9 @@ hr {
     -webkit-box-shadow: 0 1px 1px rgba(209, 244, 200, 0.8) inset;
             box-shadow: 0 1px 1px rgba(209, 244, 200, 0.8) inset; }
 
-.theme-peatio-info {
+.theme-freedomex-info {
   background: #1ea8b1; }
-  .theme-peatio-info.gradient {
+  .theme-freedomex-info.gradient {
     background-color: #3dd4df;
     /*IE 10*/
     background-image: -webkit-gradient(linear, left top, left bottom, from(#3dd4df), to(#1ea8b1)) !important;
@@ -7740,9 +7740,9 @@ hr {
     -webkit-box-shadow: 0 1px 1px rgba(170, 236, 241, 0.8) inset;
             box-shadow: 0 1px 1px rgba(170, 236, 241, 0.8) inset; }
 
-.theme-peatio-warning {
+.theme-freedomex-warning {
   background: #ff661a; }
-  .theme-peatio-warning.gradient {
+  .theme-freedomex-warning.gradient {
     background-color: #ff9966;
     /*IE 10*/
     background-image: -webkit-gradient(linear, left top, left bottom, from(#ff9966), to(#ff661a)) !important;
@@ -7754,9 +7754,9 @@ hr {
     -webkit-box-shadow: 0 1px 1px rgba(255, 238, 230, 0.8) inset;
             box-shadow: 0 1px 1px rgba(255, 238, 230, 0.8) inset; }
 
-.theme-peatio-danger {
+.theme-freedomex-danger {
   background: #ee4455; }
-  .theme-peatio-danger.gradient {
+  .theme-freedomex-danger.gradient {
     background-color: #f48a95;
     /*IE 10*/
     background-image: -webkit-gradient(linear, left top, left bottom, from(#f48a95), to(#ee4455)) !important;
@@ -7768,14 +7768,14 @@ hr {
     -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8) inset;
             box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8) inset; }
 
-.theme-peatio-text {
+.theme-freedomex-text {
   color: #536578; }
 
-.theme-selector .color-item.peatio:hover, .theme-selector .color-item.peatio.active {
+.theme-selector .color-item.freedomex:hover, .theme-selector .color-item.freedomex.active {
   border-color: #536578; }
 
 /* ---------------------------------------------- */
-/*          Theme peatio font
+/*          Theme freedomex font
 /* ---------------------------------------------- */
 body {
   font-size: 0.9rem;

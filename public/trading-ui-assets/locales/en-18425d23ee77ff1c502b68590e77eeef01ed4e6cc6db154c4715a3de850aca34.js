@@ -798,5 +798,5 @@
   I18n.l = I18n.localize;
   I18n.p = I18n.pluralize;
 })(typeof(exports) === "undefined" ? (this.I18n || (this.I18n = {})) : exports);
-I18n.translations = {"en":{"brand":"Peatio","submit":"Submit","cancel":"Cancel","confirm":"Confirm"}};
+I18n.translations = {"en":{"brand":"Freedomex","submit":"Submit","cancel":"Cancel","confirm":"Confirm"}};
 I18n.locale = 'en';

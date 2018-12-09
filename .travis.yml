@@ -7,7 +7,7 @@ language: ruby
 cache: bundler
 
 env:
-  - BOT_USERNAME=kite-bot BOT_NAME="Kite Bot" BOT_EMAIL=kite-bot@heliostech.fr REPOSITORY_SLUG=rubykube/peatio-trading-ui
+  - BOT_USERNAME=kite-bot BOT_NAME="Kite Bot" BOT_EMAIL=kite-bot@heliostech.fr REPOSITORY_SLUG=rubykube/freedomex-trading-ui
 
 services:
   - docker
@@ -26,7 +26,7 @@ before_script:
 
 # Execute all of the commands which should make the build pass or fail.
 script:
-  docker build --tag peatio-trading-ui .
+  docker build --tag freedomex-trading-ui .
 
 # Execute all of the commands which need to be executed after the build passed.
 after_success: ruby ci/bump.rb

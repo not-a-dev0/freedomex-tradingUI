@@ -1,3 +1,3 @@
-module PeatioTradingUI
+module FreedomexTradingUI
 
 end

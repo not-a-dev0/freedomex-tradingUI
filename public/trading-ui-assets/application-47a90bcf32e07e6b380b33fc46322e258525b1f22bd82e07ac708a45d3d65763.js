@@ -22156,7 +22156,7 @@ function(b){a(!1,b)};f.src=this.options.authEndpoint+"?callback="+encodeURICompo
     Notifier.prototype.notify = function(title, content, logo) {
       var popup;
       if (logo == null) {
-        logo = '/peatio-notification-logo.png';
+        logo = '/freedomex-notification-logo.png';
       }
       if (this.enableNotification === true || this.enableNotification === "true") {
         if (window.Notification) {
@@ -23803,7 +23803,7 @@ discardElement:Va,css:K,each:p,extend:s,map:za,merge:y,pick:q,splat:qa,extendCla
       symbol = gon.currencies[gon.market.bid_unit].symbol;
       price = data.last;
       market = [gon.market.ask_unit, gon.market.bid_unit].join("/").toUpperCase();
-      title = 'Peatio Exchange';
+      title = 'Freedomex Exchange';
       return document.title = price + " " + market + " – " + title;
     };
     this.refreshDepth = function(data) {
