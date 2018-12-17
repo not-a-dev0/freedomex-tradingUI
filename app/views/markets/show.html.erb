@@ -36,16 +36,20 @@
       <div class="container-fluid">
       <div class="row orderTabs">
         <div class="col-md-8">
-          <ul class="nav" role="tablist">
+          <ul class="nav" role="">
             <li class="nav-item active">
-              <a class="nav-link" data-toggle="pill" href="#openorder">Open Orders</a>
+              <a class="nav-link" id="open_order_list" style="cursor: pointer;">Open Orders</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="pill" href="#histroyorder">History Orders</a>
+              <a class="nav-link" id="history_order_list" style="cursor: pointer;">History Orders</a>
             </li>
           </ul>
-           <%= render partial: 'my_orders' %>
+          <div id="first-div">
+            <%= render partial: 'my_orders' %>
+          </div>
+          <div id="second-div" style="display: none;">
            <%= render partial: 'my_orders_history' %>
+         </div>
         </div>
 
         <div class="col-md-4">
@@ -60,7 +64,14 @@
 </div>
 
 <script type="text/javascript">
-  $(document).on('click', 'li.nav-item', function(){
-    $('#my_orders, #my_orders_history').toggle()
+  $(document).on('click', '#open_order_list', function(){
+    $('#first-div').css("display","block");
+    $('#second-div').css("display","none");
   })
+
+  $(document).on('click', '#history_order_list', function(){
+    $('#first-div').css("display","none");
+    $('#second-div').css("display","block");
+  })
+
 </script>
