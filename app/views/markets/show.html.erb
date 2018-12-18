@@ -38,10 +38,10 @@
         <div class="col-md-8">
           <ul class="nav" role="">
             <li class="nav-item active">
-              <a class="nav-link" id="open_order_list" style="cursor: pointer;">Open Orders</a>
+              <a class="nav-link open_order" id="open_order_list" style="cursor: pointer;">Open Orders</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="history_order_list" style="cursor: pointer;">History Orders</a>
+              <a class="nav-link order_history" id="history_order_list" style="cursor: pointer;">History Orders</a>
             </li>
           </ul>
           <div id="first-div">
@@ -73,5 +73,11 @@
     $('#first-div').css("display","none");
     $('#second-div').css("display","block");
   })
+
+
+  $('.orderTabs li').click(function() {
+    $('.orderTabs li.active').removeClass('active');
+    $(this).addClass('active');
+  });
 
 </script>
