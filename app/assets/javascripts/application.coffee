@@ -10,6 +10,8 @@
 #= require bootstrap
 #= require bootstrap-switch.min
 #
+#= require mdb
+$= require popper.min
 #= require moment
 #= require bignumber
 #= require underscore

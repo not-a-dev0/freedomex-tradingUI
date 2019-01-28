@@ -17,6 +17,7 @@ gem 'mini_racer', '~> 0.1', require: false
 gem 'ejs','~> 1.1'
 gem 'faraday', '~> 0.12'
 gem 'sprockets', '~>  3.7.2'
+gem 'font-awesome-rails'
 
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'

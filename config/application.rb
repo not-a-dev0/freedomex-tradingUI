@@ -47,6 +47,9 @@ module PeatioTradingUI
     #   lib/peatio_trading_ui/foo/bar/baz.rb => Bar::Baz
     # We disable eager load here since lib/peatio_trading_ui contains lot of stuff which is not required for typical app functions.
     config.paths.add 'lib/peatio_trading_ui', eager_load: false, autoload: true, glob: '*'
+    config.assets.paths << Rails.root.join("app", "assets", "font", "roboto")
+    config.assets.paths << Rails.root.join("vendor", "assets", "img")
+    config.assets.paths << Rails.root.join("vendor", "assets", "mdb-addons")
 
     # Explicitly require "lib/peatio_trading_ui.rb".
     # require_dependency 'peatio_trading_ui'
